@@ -19,12 +19,14 @@ export const MutedLink = styled.a`
   font-size: 11px;
   color: rgba(200, 200, 200, 0.8);
   font-weight: 500;
+  font-family:'Offside';
   text-decoration: none;
 `;
 
 export const BoldLink = styled.a`
   font-size: 11px;
-  color: rgb(241, 196, 15);
+  font-family:'Offside';
+  color: #F7971D;
   font-weight: 500;
   text-decoration: none;
   margin: 0 4px;
@@ -39,9 +41,13 @@ export const Input = styled.input`
   border-bottom: 1.4px solid transparent;
   transition: all 200ms ease-in-out;
   font-size: 12px;
-
+  color:#FFFFFF;
+  font-family:'Offside';
+  background: #000000;
+  
   &::placeholder {
-    color: rgba(200, 200, 200, 1);
+    color: rgba(255, 255, 255, 255);
+    
   }
 
   &:not(:last-of-type) {
@@ -50,7 +56,7 @@ export const Input = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid rgb(241, 196, 15);
+    border-bottom: 2px solid #F7971D;;
   }
 `;
 
@@ -59,13 +65,13 @@ export const SubmitButton = styled.button`
   padding: 11px 40%;
   color: #fff;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 300;
+  font-family:'Offside';
   border: none;
   border-radius: 100px 100px 100px 100px;
   cursor: pointer;
   transition: all, 240ms ease-in-out;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,167,131,1) 59%, rgba(0,212,255,1) 100%);
+  background: #F7971D;
   &:hover {
     filter: brightness(1.03);
   }

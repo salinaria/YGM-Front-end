@@ -11,10 +11,11 @@ const BoxContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 19px;
-  background-color: ##fd5353;
+  background-color: #000000;
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
+  font-family:'Offside';
 `;
 
 const TopContainer = styled.div`
@@ -37,8 +38,7 @@ const BackDrop = styled(motion.div)`
   transform: rotate(60deg);
   top: -290px;
   left: -70px;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,167,131,1) 59%, rgba(0,212,255,1) 100%);
+  background: #F7971D;
 `;
 
 const HeaderContainer = styled.div`
@@ -49,6 +49,7 @@ const HeaderContainer = styled.div`
 
 const HeaderText = styled.h2`
   font-size: 30px;
+  font-family:'Offside';
   font-weight: 600;
   line-height: 1.24;
   color: #fff;
@@ -63,6 +64,7 @@ const SmallText = styled.h5`
   z-index: 10;
   margin: 0;
   margin-top: 7px;
+  font-family:'Offside';
 `;
 
 const InnerContainer = styled.div`
@@ -92,7 +94,6 @@ const expandingTransition = {
   duration: 2.3,
   stiffness: 30,
 };
-
 export function AccountBox(props) {
   const [isExpanded, setExpanded] = useState(false);
   const [active, setActive] = useState("signin");
