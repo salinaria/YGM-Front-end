@@ -1,0 +1,37 @@
+.body{
+    width: 60%;
+    height: 60px;
+    background-color: #F7971D;
+    margin-left: 20%;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-left: 3%;
+    font-family: "Offside";
+    margin-right: 20%;
+    display: flex;
+}
+.NavItemImage{
+    width: 30px;
+    height: 30px;
+
+}
+.NavItemText{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 0;
+}
+.NavItemText :hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.item{
+    justify-content: center;
+    align-content: center;
+    margin-right: 16%;
+    text-align: center;
+}
+.logo{
+    margin-right: 16%;
+}
