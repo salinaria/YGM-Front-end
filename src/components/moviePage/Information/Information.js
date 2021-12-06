@@ -5,6 +5,7 @@ import Genre from "..//..//..//assets/Genre.svg";
 import Cast from "..//..//..//assets/Cast.svg";
 import Time from "..//..//..//assets/Time.svg";
 import Summary from "..//..//..//assets/Summary.svg";
+import Bookmark from "..//..//..//assets/Bookmark.svg";
 
 const Information = (props) => {
   return (
@@ -30,6 +31,10 @@ const Information = (props) => {
       <div className={classes.infall}>
         <img src={Summary} className={classes.icons} alt="image" />
         <p className={classes.inftxt}>Summary : {props.inf.summary}</p>
+      </div>
+      <div className={classes.infall}>
+        <img src={Bookmark} className={classes.icons} alt="image" />
+        <p className={classes.inftxt}>Add To Wishlist</p>
       </div>
     </div>
   );
