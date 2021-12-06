@@ -2,10 +2,7 @@ import React from "react";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
-import Player from "./Player/player";
-import DownloadBox from "./DownloadBox/download";
-import loginBox from "./loginBox/login";
-
+import ReactPlayer from "react-player";
 const spiderman = {
   name: "Spider-Man: Far from Home",
   image:
@@ -13,31 +10,29 @@ const spiderman = {
   genre: "Action/Adventure",
   year: "2019",
   time: "2h 10m",
-<<<<<<< HEAD
   cast: "Tom Halland , Zendaya, Jake Gyllenhaal",
-=======
-  url : "https://www.youtube.com/watch?v=Nt9L1jCKGnE",
-  cast: "Cast : Tom Halland , Zendaya, Jake Gyllenhaal",
->>>>>>> ab0e5945fc77f64cdf2402b41aab0fb7b1903d8c
   summary:
     "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. ",
-/*  add:
-    "Add to Wishlist",
-    */
 };
 
 const Movie = (props) => {
   return (
     <div>
       <Navbar />
-      <div className = {classes.dual}>
-      <Information inf = {spiderman}/>
-    <div className = {classes.player}>
-      <Player/>
+      <div className={classes.dual}>
+        <Information inf={spiderman} />
+        <div className={classes.player}>
+          <ReactPlayer
+            controls={true}
+            url="https://www.youtube.com/watch?v=Nt9L1jCKGnE"
+            className="react-player"
+            autoplay="false"
+            width="100%"
+            height="70%"
+          />
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-
   );
 };
 

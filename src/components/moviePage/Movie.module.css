@@ -8,10 +8,13 @@ body{
     display:flex;
     margin-right: px;
     justify-content:center;
-    width: 150%;
-    height: 150%;
+    width: 65%;
+    height: auto;
     float: right;
-    padding-top: 50px;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+    border-radius: 20px;
 }
 
 .dual{
