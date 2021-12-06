@@ -2,3 +2,17 @@ body{
     background-color: #212121;
     color: white;
 }
+
+
+.player{
+    display:flex;
+    justify-content:center;
+    width: 150%;
+    height: 150%;
+    float: right;
+    padding-top: 50px;
+}
+
+.dual{
+    display: flex;
+}

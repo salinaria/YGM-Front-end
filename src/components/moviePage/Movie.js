@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
+import Player from "./Player/player";
 
 const spiderman = {
   name: "Spider-Man: Far from Home",
@@ -10,17 +11,27 @@ const spiderman = {
   genre: "Action/Adventure",
   year: "2019",
   time: "2h 10m",
+  url : "https://www.youtube.com/watch?v=Nt9L1jCKGnE",
   cast: "Cast : Tom Halland , Zendaya, Jake Gyllenhaal",
   summary:
     "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. ",
+/*  add:
+    "Add to Wishlist",
+    */
 };
 
 const Movie = (props) => {
   return (
     <div>
       <Navbar />
+      <div className = {classes.dual}>
       <Information inf = {spiderman}/>
+    <div className = {classes.player}>
+      <Player/>
     </div>
+    </div>
+    </div>
+
   );
 };
 
