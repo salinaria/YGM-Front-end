@@ -10,7 +10,7 @@ const spiderman = {
   genre: "Action/Adventure",
   year: "2019",
   time: "2h 10m",
-  cast: "Cast : Tom Halland , Zendaya, Jake Gyllenhaal",
+  cast: "Tom Halland , Zendaya, Jake Gyllenhaal",
   summary:
     "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. ",
 };
