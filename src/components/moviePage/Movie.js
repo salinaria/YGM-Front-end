@@ -3,6 +3,8 @@ import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
 import Player from "./Player/player";
+import DownloadBox from "./DownloadBox/download";
+import loginBox from "./loginBox/login";
 
 const spiderman = {
   name: "Spider-Man: Far from Home",

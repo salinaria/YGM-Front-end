@@ -6,6 +6,7 @@ body{
 
 .player{
     display:flex;
+    margin-right: px;
     justify-content:center;
     width: 150%;
     height: 150%;
