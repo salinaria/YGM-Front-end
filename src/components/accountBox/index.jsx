@@ -6,16 +6,18 @@ import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
 
 const BoxContainer = styled.div`
-  width: 280px;
+  width: 370px;
   min-height: 550px;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
-  background-color: #000000;
+  background-color: #212121;
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
   font-family:'Offside';
+  border: 2px solid #5A5A5A;
+  box-sizing: border-box;
 `;
 
 const TopContainer = styled.div`
@@ -36,8 +38,8 @@ const BackDrop = styled(motion.div)`
   flex-direction: column;
   border-radius: 50%;
   transform: rotate(60deg);
-  top: -290px;
-  left: -70px;
+  top: -340px;
+  left: -150px;
   background: #F7971D;
 `;
 

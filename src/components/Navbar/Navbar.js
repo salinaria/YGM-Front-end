@@ -40,7 +40,7 @@ const Movie = (props) => {
       >
         <div>
           <img className={classes.NavItemImage} src={Library} alt="home" />
-          <p className={classes.NavItemText}>Library</p>
+          <p className={classes.NavItemText}>Wishlist</p>
         </div>
       </NavLink>
 

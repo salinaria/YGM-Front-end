@@ -1,0 +1,39 @@
+body{
+    font-family: "Offside";
+    
+}
+.info{
+    background-color: #F7971D;
+    color: black;
+    width: 25%;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+.image{
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+}
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.inftxt{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.icons{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.infall{
+    display: flex;
+    margin-top: 10px;
+}

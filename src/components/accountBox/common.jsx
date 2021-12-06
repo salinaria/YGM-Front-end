@@ -36,14 +36,14 @@ export const Input = styled.input`
   width: 100%;
   height: 42px;
   outline: none;
-  border: 1px solid rgba(200, 200, 200, 0.3);
+  border: 1px solid #5A5A5A;
   padding: 0px 10px;
   border-bottom: 1.4px solid transparent;
   transition: all 200ms ease-in-out;
   font-size: 12px;
   color:#FFFFFF;
   font-family:'Offside';
-  background: #000000;
+  background: #212121;
   
   &::placeholder {
     color: rgba(255, 255, 255, 255);
