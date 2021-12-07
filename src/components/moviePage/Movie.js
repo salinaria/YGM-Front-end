@@ -3,6 +3,7 @@ import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
 import ReactPlayer from "react-player";
+import Icon from "..//..//assets/DownloadButton.svg"
 const spiderman = {
   name: "Spider-Man: Far from Home",
   image:
@@ -17,6 +18,7 @@ const spiderman = {
 
 const Movie = (props) => {
   return (
+    <>
     <div>
       <Navbar />
       <div className={classes.dual}>
@@ -32,7 +34,23 @@ const Movie = (props) => {
           />
         </div>
       </div>
+      <div>
+      <a href="http://localhost:3000/DownloadLink" target="blank">
+      <button className={classes.button1}>
+            Download
+          </button>
+      </a>
+      </div>
+
+      <div>
+      <a href="http://localhost:3000/login" target="blank">
+        <button className={classes.button2}>
+            Login to Download
+            </button>
+      </a>
+      </div>
     </div>
+    </>
   );
 };
 
