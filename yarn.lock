@@ -9520,6 +9520,11 @@ react-fast-compare@^3.0.1:
   resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
   integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
+react-image-button@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-image-button/-/react-image-button-1.0.6.tgz#b734b4bb4a958fcd0dbfb5a68096e5dca843a3ba"
+  integrity sha512-wmDUM6jURrjZXBcdYyn408b2NvMZwfpVysVQF19JK3jDizDCyeJ/usjHKFZK6L/7z60YAMceRkZc/702OrL5cQ==
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"

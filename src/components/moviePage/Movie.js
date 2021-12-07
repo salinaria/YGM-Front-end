@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{ useState } from "react";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
@@ -16,7 +16,9 @@ const spiderman = {
     "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. ",
 };
 
+
 const Movie = (props) => {
+  const [notLogged, LogedIn] = useState(true);
   return (
     <>
     <div>
@@ -36,7 +38,8 @@ const Movie = (props) => {
       </div>
       <div>
       <a href="http://localhost:3000/DownloadLink" target="blank">
-      <button className={classes.button1}>
+      <button className={classes.button1}
+      disabled={notLogged}>
             Download
           </button>
       </a>
@@ -44,7 +47,9 @@ const Movie = (props) => {
 
       <div>
       <a href="http://localhost:3000/login" target="blank">
-        <button className={classes.button2}>
+        <button className={classes.button2}
+        onClick={() => LogedIn(false)}
+        disabled={!notLogged}>
             Login to Download
             </button>
       </a>
