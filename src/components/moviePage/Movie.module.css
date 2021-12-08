@@ -20,34 +20,3 @@ body{
 .dual{
     display: flex;
 }
-
-.button1{
-    cursor: pointer;
-    display: flex;
-    float: right;
-    position: relative;
-    margin-bottom: 35px;
-    border-radius: 25px;
-    margin-top: -250px;
-    margin-right: 180px;
-    width: 1300px;
-    height: auto;
-    font-size: xx-large;
-    font-family: 'Offside';
-    background-color: rgb(247, 160, 0);
-}
-.button2{
-    cursor: pointer;
-    display: flex;
-    float: right;
-    position: relative;
-    margin-top: -180px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-    margin-right: 180px;
-    width: 1300px;
-    height: auto;
-    font-size: xx-large;
-    font-family: 'Offside';
-    background-color: rgb(247, 160, 0);
-}

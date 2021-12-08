@@ -1,9 +1,9 @@
-import React ,{ useState } from "react";
+import React, { useState } from "react";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
 import ReactPlayer from "react-player";
-import Icon from "..//..//assets/DownloadButton.svg"
+
 const spiderman = {
   name: "Spider-Man: Far from Home",
   image:
@@ -16,11 +16,8 @@ const spiderman = {
     "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. ",
 };
 
-
 const Movie = (props) => {
-  const [notLogged, LogedIn] = useState(true);
   return (
-    <>
     <div>
       <Navbar />
       <div className={classes.dual}>
@@ -36,26 +33,7 @@ const Movie = (props) => {
           />
         </div>
       </div>
-      <div>
-      <a href="http://localhost:3000/DownloadLink" target="blank">
-      <button className={classes.button1}
-      disabled={notLogged}>
-            Download
-          </button>
-      </a>
-      </div>
-
-      <div>
-      <a href="http://localhost:3000/login" target="blank">
-        <button className={classes.button2}
-        onClick={() => LogedIn(false)}
-        disabled={!notLogged}>
-            Login to Download
-            </button>
-      </a>
-      </div>
     </div>
-    </>
   );
 };
 

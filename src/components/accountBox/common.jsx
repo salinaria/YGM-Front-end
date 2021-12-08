@@ -26,7 +26,7 @@ export const MutedLink = styled.a`
 export const BoldLink = styled.a`
   font-size: 11px;
   font-family:'Offside';
-  color: #F7971D;
+  color: #F8961E;
   font-weight: 500;
   text-decoration: none;
   margin: 0 4px;
@@ -56,22 +56,22 @@ export const Input = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid #F7971D;;
+    border-bottom: 2px solid #F8961E;
   }
 `;
 
 export const SubmitButton = styled.button`
   width: 100%;
   padding: 11px 40%;
-  color: #fff;
+  color: #212121;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 600;
   font-family:'Offside';
   border: none;
   border-radius: 100px 100px 100px 100px;
   cursor: pointer;
   transition: all, 240ms ease-in-out;
-  background: #F7971D;
+  background: #F8961E;
   &:hover {
     filter: brightness(1.03);
   }
