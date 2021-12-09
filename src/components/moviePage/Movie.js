@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";

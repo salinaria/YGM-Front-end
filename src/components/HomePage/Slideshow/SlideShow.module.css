@@ -1,0 +1,69 @@
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+  direction: ltr;
+}
+.image{
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+  border-radius: 30px;
+}
+.text {
+  position: relative;
+  margin-top: -104px;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: "Offside";
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #F8961E;
+  text-align: left;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.slide {
+  display: inline-block;
+  height: 500px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  align-self: center;
+  background-color:black;
+}
+
+.slideshowDotactive {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  align-self: center;
+  background-color: #F8961E;
+}

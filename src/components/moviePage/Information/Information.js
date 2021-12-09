@@ -6,13 +6,12 @@ import Genre from "..//..//..//assets/Genre.svg";
 import Cast from "..//..//..//assets/Cast.svg";
 import Time from "..//..//..//assets/Time.svg";
 import Summary from "..//..//..//assets/Summary.svg";
-import Bookmark from "..//..//..//assets/Bookmark.svg";
 import Bookmarkorange from "..//..//..//assets/Bookmarkorange.svg";
 import Bookmarkedorange from "..//..//..//assets/Bookmarked.svg";
 const Information = (props) => {
   const [iswished, setWish] = useState(false);
   const wished = () => {
-    if (iswished == false) {
+    if (iswished === false) {
       setWish(true);
     } else {
       setWish(false);
@@ -22,7 +21,7 @@ const Information = (props) => {
   return (
     <div className={classes.info}>
       <p className={classes.title}>{props.inf.name}</p>
-      <img src={props.inf.image} className={classes.image} alt="image" />
+      <img src={props.inf.image} className={classes.image} alt="icon" />
 
       <button
         className={iswished ? classes.wishlisted : classes.wishlist}
@@ -33,7 +32,7 @@ const Information = (props) => {
             <img
               src={Bookmarkedorange}
               className={classes.wishicon}
-              alt="image"
+              alt="icon"
             />
             <p className={classes.wishtxt}>Remove from Wishlist</p>
           </div>
@@ -42,7 +41,7 @@ const Information = (props) => {
             <img
               src={Bookmarkorange}
               className={classes.wishicon}
-              alt="image"
+              alt="icon"
             />
             <p className={classes.wishtxt}>Add To Wishlist</p>
           </div>
@@ -50,23 +49,23 @@ const Information = (props) => {
       </button>
 
       <div className={classes.infall}>
-        <img src={Year} className={classes.icons} alt="image" />
+        <img src={Year} className={classes.icons} alt="icon" />
         <p className={classes.inftxt}>Year : {props.inf.year}</p>
       </div>
       <div className={classes.infall}>
-        <img src={Genre} className={classes.icons} alt="image" />
+        <img src={Genre} className={classes.icons} alt="icon" />
         <p className={classes.inftxt}>Gnere : {props.inf.genre}</p>
       </div>
       <div className={classes.infall}>
-        <img src={Time} className={classes.icons} alt="image" />
+        <img src={Time} className={classes.icons} alt="icon" />
         <p className={classes.inftxt}>Time : {props.inf.time}</p>
       </div>
       <div className={classes.infall}>
-        <img src={Cast} className={classes.icons} alt="image" />
+        <img src={Cast} className={classes.icons} alt="icon" />
         <p className={classes.inftxt}>Cast : {props.inf.cast}</p>
       </div>
       <div className={classes.infall}>
-        <img src={Summary} className={classes.icons} alt="image" />
+        <img src={Summary} className={classes.icons} alt="icon" />
         <p className={classes.inftxt}>Summary : {props.inf.summary}</p>
       </div>
     </div>

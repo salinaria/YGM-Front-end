@@ -3,7 +3,8 @@ import "./App.css";
 import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
 import Movie from "./components/moviePage/Movie";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./components/HomePage/Home";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const AccBox = styled.div`
   width: 100%;
@@ -18,14 +19,19 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-          <Route path="/auth">
-            <AccBox>
-              <AccountBox />
-            </AccBox>
-          </Route>
-          <Route path="/movie">
-            <Movie />
-          </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route path="/auth">
+          <AccBox>
+            <AccountBox />
+          </AccBox>
+        </Route>
+
+        <Route path="/movie">
+          <Movie />
+        </Route>
       </BrowserRouter>
     </div>
   );
