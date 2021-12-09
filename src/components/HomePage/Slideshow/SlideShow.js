@@ -7,29 +7,46 @@ const colors = [
     image:
       "https://images.indianexpress.com/2021/07/canva-photo-editor-13-1.jpg",
     name: "Harry Potter and the Deathly Hallows",
+    id: 8,
   },
 
   {
     image:
       "https://ucsdguardian.org/wp-content/uploads/2021/11/Villeneuve-Dune-courtesy-of-TV-Insider.jpeg",
     name: "Dune",
+    id: 16,
   },
 
   {
     image:
-      "https://www.indiewire.com/wp-content/uploads/2018/10/Johnny-English-1.jpg",
-    name: "Johny English",
+      "https://www.plexreel.com/wp-content/uploads/2021/05/venom-2-trailer-1000x600.jpg",
+    name: "Venom let there be carnage",
+    id: 11,
   },
 
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/en/f/f9/The_Curse_of_the_Black_Pearl_Soundtrack.jpg",
+      "https://www.teahub.io/photos/full/173-1738317_pirates-of-the-caribbean-3-at-worlds-end.jpg",
     name: "Pirates of the Caribbean: The Curse of the Black Pearl",
+    id: 12,
   },
   {
     image:
-      "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d30c8e5eab9270008f9bd2a%2FCasa-de-Papel-3%2F960x0.jpg%3Ffit%3Dscale",
+      "https://gadgetfreeks.com/wp-content/uploads/2020/04/Money-Heist-Season-4.png",
     name: "La casa de papel",
+    id: 13,
+  },
+  {
+    image:
+      "https://zoomlife.ir/uploads/posts/2021-01/1610878719-no-time-to-die.jpg",
+    name: "No time to die",
+    id: 14,
+  },
+  {
+    image:
+      "https://timesread.com/wp-content/uploads/2021/07/F9-Poster-Landscape.jpg",
+    name: "Fast 9:The Fast Saga",
+    id: 15,
   },
 ];
 const delay = 5000;
@@ -67,8 +84,12 @@ const SlideShow = (props) => {
       >
         {colors.map((categor, index) => (
           <div className={classes.slide} key={index}>
-            <Link to="/movie">
-            <img src={categor.image} className={classes.image} alt="categor"/>
+            <Link to={"/movie/" + String(categor.id)}>
+              <img
+                src={categor.image}
+                className={classes.image}
+                alt="categor"
+              />
             </Link>
             <p className={classes.text}>{categor.name}</p>
           </div>

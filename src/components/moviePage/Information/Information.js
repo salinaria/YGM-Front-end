@@ -55,7 +55,7 @@ const Information = (props) => {
       </div>
       <div className={classes.infall}>
         <img src={Genre} className={classes.icons} alt="icon" />
-        <p className={classes.inftxt}>Gnere : {props.inf.genre}</p>
+        <p className={classes.inftxt}>Genre : {props.inf.genre}</p>
       </div>
       <div className={classes.infall}>
         <img src={Time} className={classes.icons} alt="icon" />

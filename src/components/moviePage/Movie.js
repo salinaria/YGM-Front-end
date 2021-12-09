@@ -39,7 +39,7 @@ const Movie = (props) => {
             className="react-player"
             autoplay="false"
             width="100%"
-            height="70%"
+            height="50%"
           />
         </div>
       </div>
