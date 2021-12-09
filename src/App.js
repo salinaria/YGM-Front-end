@@ -29,7 +29,7 @@ function App() {
           </AccBox>
         </Route>
 
-        <Route path="/movie">
+        <Route path="/movie/:id">
           <Movie />
         </Route>
       </BrowserRouter>
