@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import classes from "./Information.module.css";
 import Year from "..//..//..//assets/Year.svg";
 import Genre from "..//..//..//assets/Genre.svg";
@@ -8,6 +8,8 @@ import Time from "..//..//..//assets/Time.svg";
 import Summary from "..//..//..//assets/Summary.svg";
 import Bookmarkorange from "..//..//..//assets/Bookmarkorange.svg";
 import Bookmarkedorange from "..//..//..//assets/Bookmarked.svg";
+import axios from "axios";
+
 const Information = (props) => {
   const [iswished, setWish] = useState(false);
   const wished = () => {
@@ -17,7 +19,6 @@ const Information = (props) => {
       setWish(false);
     }
   };
-
   return (
     <div className={classes.info}>
       <p className={classes.title}>{props.inf.name}</p>
@@ -58,7 +59,7 @@ const Information = (props) => {
       </div>
       <div className={classes.infall}>
         <img src={Time} className={classes.icons} alt="icon" />
-        <p className={classes.inftxt}>Time : {props.inf.time}</p>
+        <p className={classes.inftxt}>Time : {props.inf.length}</p>
       </div>
       <div className={classes.infall}>
         <img src={Cast} className={classes.icons} alt="icon" />

@@ -1,31 +1,41 @@
-//import React, { useState } from "react";
+import React from "react"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
 import ReactPlayer from "react-player";
+import axios from "axios";
 
-const spiderman = {
-  name: "Spider-Man: Far from Home",
-  image:
-    "https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/Spider-Man-FarFromHome-rating.jpg?itok=CGe-MMMn",
-  genre: "Action/Adventure",
-  year: "2019",
-  time: "2h 10m",
-  cast: "Tom Halland , Zendaya, Jake Gyllenhaal",
-  summary:
-    "Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. ",
-};
+
 
 const Movie = (props) => {
+  const [Data, setData] = useState({
+    name: "",
+    image: "",
+    year: 0,
+    length: 0,
+    cast: [],
+    link: "",
+    summary:"",
+    genre :0,
+  });
+  let slug = useParams();
+  console.log(slug.id);
+  useEffect(() => {
+    axios.get("http://127.0.0.1:8000/api/movie/"+String(slug.id)).then((response) => setData(response.data));
+  }, []);
+  
+  
   return (
     <div>
       <Navbar />
       <div className={classes.dual}>
-        <Information inf={spiderman} />
+        <Information inf={Data} />
         <div className={classes.player}>
           <ReactPlayer
             controls={true}
-            url="https://www.youtube.com/watch?v=Nt9L1jCKGnE"
+            url={Data.link}
             className="react-player"
             autoplay="false"
             width="100%"

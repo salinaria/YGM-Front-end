@@ -6,7 +6,7 @@ const colors = [
   {
     image:
       "https://images.indianexpress.com/2021/07/canva-photo-editor-13-1.jpg",
-    name: "Harry Potter and the deathly hallows",
+    name: "Harry Potter and the Deathly Hallows",
   },
 
   {
