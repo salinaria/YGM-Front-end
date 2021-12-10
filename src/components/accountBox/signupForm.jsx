@@ -1,7 +1,5 @@
 import React, { useContext, useRef } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import classes from "./profile.module.css"
 
 import {
   BoldLink,
@@ -13,8 +11,6 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
-
-
 
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
@@ -28,7 +24,7 @@ export function SignupForm(props) {
       email: input1.current.value,
       username: input2.current.value,
       password: input3.current.value,
-    });
+    }).then(switchToSignin);
   }
 
   return (
@@ -41,7 +37,7 @@ export function SignupForm(props) {
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit" onClick={confirm}>
-        <Link className={classes.link} to="/">Signup</Link>
+        Signup
       </SubmitButton>
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">

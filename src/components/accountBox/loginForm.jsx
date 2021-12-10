@@ -10,8 +10,6 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
-import { Link } from "react-router-dom";
-import classes from "./profile.module.css";
 
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
