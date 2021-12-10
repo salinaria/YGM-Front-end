@@ -1,5 +1,5 @@
 import React from "react";
-import { useState , useEffect } from "react";
+import { useState } from "react";
 import classes from "./Information.module.css";
 import Year from "..//..//..//assets/Year.svg";
 import Genre from "..//..//..//assets/Genre.svg";
@@ -8,7 +8,6 @@ import Time from "..//..//..//assets/Time.svg";
 import Summary from "..//..//..//assets/Summary.svg";
 import Bookmarkorange from "..//..//..//assets/Bookmarkorange.svg";
 import Bookmarkedorange from "..//..//..//assets/Bookmarked.svg";
-import axios from "axios";
 
 const Information = (props) => {
   const [iswished, setWish] = useState(false);
@@ -39,11 +38,7 @@ const Information = (props) => {
           </div>
         ) : (
           <div className={classes.wishi}>
-            <img
-              src={Bookmarkorange}
-              className={classes.wishicon}
-              alt="icon"
-            />
+            <img src={Bookmarkorange} className={classes.wishicon} alt="icon" />
             <p className={classes.wishtxt}>Add To Wishlist</p>
           </div>
         )}
