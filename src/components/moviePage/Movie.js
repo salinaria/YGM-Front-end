@@ -7,6 +7,7 @@ import Information from "./Information/Information";
 import ReactPlayer from "react-player";
 import download from ".//..//..//assets/Download.svg";
 import danger from ".//..//..//assets/Danger.svg";
+import sub from ".//.//..//..//assets/Sub.svg"
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -60,6 +61,12 @@ const Movie = (props) => {
               </p>
             </a>
           )}
+          <a href={"https://subf2m.co/subtitles/searchbytitle?query="+Data.name} className={classes.btn}>
+              <img className={classes.imgbtn} src={sub} alt="download" />
+              <p className={classes.text}>
+                {"Subtitle"}
+              </p>
+            </a>
         </div>
       </div>
     </div>
