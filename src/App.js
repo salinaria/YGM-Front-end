@@ -5,6 +5,7 @@ import { AccountBox } from "./components/accountBox";
 import Movie from "./components/moviePage/Movie";
 import Home from "./components/HomePage/Home";
 import { BrowserRouter, Route } from "react-router-dom";
+import Profile from "./components/ProfilePage/Profile"
 
 const AccBox = styled.div`
   width: 100%;
@@ -19,8 +20,13 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+
         <Route exact path="/">
           <Home />
+        </Route>
+
+        <Route exact path="/profile">
+          <Profile />
         </Route>
 
         <Route path="/auth">
@@ -32,6 +38,7 @@ function App() {
         <Route path="/movie/:id">
           <Movie />
         </Route>
+
       </BrowserRouter>
     </div>
   );

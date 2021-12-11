@@ -1,0 +1,88 @@
+.btn {
+  background: none;
+  border: none;
+  display: flex;
+  margin-top: 50px;
+}
+.btntxt {
+  font-family: "Offside";
+  font-size: 24px;
+  color: #eb1b1b;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+.txt {
+  font-family: "Offside";
+  font-size: 24px;
+  color: white;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+.btnimg {
+  width: 45px;
+  height: 45px;
+}
+.body {
+  z-index: 1;
+  margin-left: 32.5%;
+  display: block;
+  margin-top: 80px;
+  width: 35%;
+  padding: 10px;
+  padding-top: 0px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(40, 46, 52, 0.4) 0%,
+    rgba(40, 46, 52, 0.1) 75%
+  );
+  backdrop-filter: blur(30px);
+  border: 0.5px solid white;
+}
+
+.bacy {
+  position: absolute;
+  margin-top: 20px;
+  margin-bottom: -600px;
+  margin-left: 30%;
+  z-index: -100;
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  background: linear-gradient(121.65deg, #ff3307 -1.51%, #ffaa06 94.85%);
+  animation: wave 10s linear infinite;
+  filter: blur(7px);
+}
+.bacy {
+  animation-delay: 0s;
+}
+@keyframes wave {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(200px, 250px);
+  }
+  50% {
+    transform: translate(200px, 0px);
+  }
+  75% {
+    transform: translate(0px, 250px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+  
+}
+.bacx {
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 60%;
+  z-index: -100;
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  background: linear-gradient(121.65deg, #ff3307 -1.51%, #ffaa06 94.85%);
+  filter: blur(7px);
+}

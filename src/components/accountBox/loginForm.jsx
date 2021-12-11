@@ -10,11 +10,14 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
+import { useHistory } from "react-router-dom";
 
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);
   const input1 = useRef(null);
   const input2 = useRef(null);
+  const history = useHistory();
+
   function confirm() {
     return axios
       .post("http://localhost:8000/api/login/", {
@@ -22,9 +25,12 @@ export function LoginForm(props) {
         password: input2.current.value,
       })
       .then((user) => {
-        console.log(user);
         localStorage.setItem("currentUser", JSON.stringify(user.data));
         return user;
+      })
+      .then((res) => history.push("/"))
+      .catch((err) => {
+        alert("Invalid username or password");
       });
   }
   return (

@@ -32,7 +32,7 @@ const colors = [
   },
   {
     image:
-      "https://gadgetfreeks.com/wp-content/uploads/2020/04/Money-Heist-Season-4.png",
+      "https://mcdn.wallpapersafari.com/medium/3/40/wvljyk.jpg",
     name: "La casa de papel",
     id: 13,
   },

@@ -8,6 +8,11 @@ import Library from "../../assets/Bookmark.svg";
 import Profile from "../../assets/Profile.svg";
 
 const Movie = (props) => {
+  const currentUser = () => {
+    return JSON.parse(localStorage.getItem("currentUser"));
+  };
+  const thisuser = currentUser();
+  
   return (
     <div className={classes.body}>
       <NavLink
@@ -46,7 +51,7 @@ const Movie = (props) => {
 
       <NavLink
         className={classes.item}
-        to={"/"}
+        to={thisuser!==null?"/profile":"/auth"}
         style={{ display: "flex", flexDirection: "row" }}
       >
         <div>

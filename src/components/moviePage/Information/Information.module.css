@@ -1,80 +1,79 @@
-body{
-    font-family: "Offside";
+body {
+  font-family: "Offside";
+}
+.info {
+  background-color: #f8961e;
+  color: black;
+  width: 25%;
+  margin-left: 70px;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+.image {
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 10px;
+}
+.title {
+  font-weight: 1000;
+  font-size: 20px;
+  text-align: center;
+}
+.inftxt {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+.icons {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.infall {
+  display: flex;
+  margin-top: 10px;
+}
+.wishlist {
+  background-color: #212121;
+  border-radius: 20px;
+  border: none;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 23%;
+  height: 45px;
+}
+.wishlist:hover {
+  box-shadow: 0px 8px 5px 0px rgba(33, 33, 33, 0.55);
+}
+.wishlisted {
+  background-color: #212121;
+  border-radius: 20px;
+  border: none;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 18%;
+  height: 45px;
+}
+.wishlisted:hover {
+  box-shadow: 0px 8px 5px 0px rgba(33, 33, 33, 0.55);
+}
 
+.wishicon {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
 }
-.info{
-    background-color: #F8961E;
-    color: black;
-    width: 25%;
-    margin-left: 70px;
-    margin-top: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    border-radius: 20px;
+.wishtxt {
+  font-family: "Offside";
+  font-size: 16px;
+  margin-top: 11px;
+  color: #f8961e;
 }
-.image{
-    width: 70%;
-    margin-left: 15%;
-    border-radius: 10px;
-}
-.title{
-    font-weight: 1000;
-    font-size: 20px;
-    text-align: center;
-}
-.inftxt{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 500;
-    margin-top: 2px;
-}
-.icons{
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-}
-.infall{
-    display: flex;
-    margin-top: 10px;
-}
-.wishlist{
-    background-color: #212121;
-    border-radius: 20px;
-    border: none;
-    width: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 23%;
-    height: 45px;
-}
-.wishlist:hover{
-    box-shadow: 0px 8px 5px 0px rgba(33, 33, 33, 0.55);
-}
-.wishlisted{
-    background-color: #212121;
-    border-radius: 20px;
-    border: none;
-    width: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 18%;
-    height: 45px;
-}
-.wishlisted:hover{
-    box-shadow: 0px 8px 5px 0px rgba(33, 33, 33, 0.55);
-}
-
-.wishicon{
-    width: 30px;
-    height: 30px;
-    margin-top: 5px;
-}
-.wishtxt{
-    font-family: "Offside";
-    font-size: 16px;
-    margin-top: 11px;
-    color: #F8961E;
-}
-.wishi{
-    display: flex;
+.wishi {
+  display: flex;
 }

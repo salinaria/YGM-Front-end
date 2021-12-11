@@ -1,15 +1,20 @@
-import React from "react"
+import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import classes from "./Movie.module.css";
 import Navbar from "../Navbar/Navbar";
 import Information from "./Information/Information";
 import ReactPlayer from "react-player";
+import download from ".//..//..//assets/Download.svg";
+import danger from ".//..//..//assets/Danger.svg";
 import axios from "axios";
-
-
+import { Link } from "react-router-dom";
 
 const Movie = (props) => {
+  const currentUser = () => {
+    return JSON.parse(localStorage.getItem("currentUser"));
+  };
+  const thisuser = currentUser();
   const [Data, setData] = useState({
     name: "",
     image: "",
@@ -17,16 +22,17 @@ const Movie = (props) => {
     length: 0,
     cast: [],
     link: "",
-    summary:"",
-    genre :0,
+    summary: "",
+    genre: 0,
   });
   let slug = useParams();
   console.log(slug.id);
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/movie/"+String(slug.id)).then((response) => setData(response.data));
+    axios
+      .get("http://127.0.0.1:8000/api/movie/" + String(slug.id))
+      .then((response) => setData(response.data));
   }, []);
-  
-  
+
   return (
     <div>
       <Navbar />
@@ -41,6 +47,19 @@ const Movie = (props) => {
             width="100%"
             height="50%"
           />
+          {thisuser === null ? (
+            <Link className={classes.btn} to="/auth">
+                <img className={classes.imgbtn} src={danger} alt="download" />
+                <p className={classes.text}>{"Login to download this movie"}</p>
+            </Link>
+          ) : (
+            <a href={Data.link} className={classes.btn}>
+              <img className={classes.imgbtn} src={download} alt="download" />
+              <p className={classes.text}>
+                {"Download    '" + Data.name + "'"}
+              </p>
+            </a>
+          )}
         </div>
       </div>
     </div>
