@@ -3,6 +3,9 @@
   margin-top: 100px;
   margin-left: 5%;
 }
+.body:hover {
+  filter: drop-shadow(0px 10px 10px rgba(49, 48, 49, 0.6));
+}
 .box {
   width: 80%;
   height: 400px;
@@ -11,6 +14,7 @@
   background: rgba(255, 255, 255, 0.05);
   box-shadow: inset 0px 0px 18px 23px rgba(240, 244, 248, 0.01);
   backdrop-filter: blur(50px);
+  border: 0.5px solid white;
   border-radius: 50px;
 }
 .circle {
@@ -36,6 +40,8 @@
   transform: rotate(-9.13deg);
 }
 .btn {
+  position: relative;
+  z-index: 100;
   width: 150px;
   height: 65px;
   border: none;
@@ -43,27 +49,46 @@
   color: white;
   font-family: "Offside";
   font-size: 24px;
-  margin-left: 65%;
+  margin-left: 80%;
   margin-top: -30px;
   border-radius: 25px 10px 25px 10px;
   transform: rotate(3deg);
 }
-.link{
+.btn:hover {
+  animation: wave 0.5s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.link {
   color: white;
 }
-.img{
+.img {
   height: 250px;
   margin: 25px;
   border-radius: 20px;
+  opacity: 0.9;
 }
-.dual{
+.img:hover {
+  opacity: 1.1;
+}
+.dual {
   display: flex;
 }
-.title{
+.title {
   font-size: 30px;
   margin-bottom: 15px;
 }
-.infor{
+.infor {
   margin-top: 5px;
   font-size: 18px;
   width: 80%;
@@ -73,19 +98,19 @@
   display: flex;
   margin-bottom: 3px;
 }
-.icons{
+.icons {
   width: 30px;
   height: 30px;
   margin-right: 5px;
 }
 
-.summary{
+.summary {
   font-size: 16px;
   width: 70%;
   margin-left: 35px;
   margin-top: -30px;
 }
-.sumal{
+.sumal {
   margin-top: -10px;
   margin-left: 25px;
 }

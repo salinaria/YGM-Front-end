@@ -35,16 +35,16 @@ const MovieBox = (props) => {
             </div>
           </div>
         </div>
-        <div className={classes.sumal} >
+        <div className={classes.sumal}>
           <img src={Summary} className={classes.icons} alt="icon" />
           <p className={classes.summary}>Summary : {props.inf.summary}</p>
         </div>
+        <button className={classes.btn}>
+          <Link to={"/movie/" + String(props.inf.id)} className={classes.link}>
+            Download
+          </Link>
+        </button>
       </div>
-      <button className={classes.btn}>
-        <Link to={"/movie/" + String(props.inf.id)} className={classes.link}>
-          Download
-        </Link>
-      </button>
     </div>
   );
 };

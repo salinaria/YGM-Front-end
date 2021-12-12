@@ -54,9 +54,6 @@
   animation: wave 10s linear infinite;
   filter: blur(7px);
 }
-.bacy {
-  animation-delay: 0s;
-}
 @keyframes wave {
   0% {
     transform: translate(0px, 0px);
@@ -73,7 +70,6 @@
   100% {
     transform: translate(0px, 0px);
   }
-  
 }
 .bacx {
   position: absolute;
