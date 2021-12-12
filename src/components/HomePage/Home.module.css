@@ -1,0 +1,22 @@
+.btn {
+  font-family: "Offside";
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: none;
+  color: white;
+  height: 50px;
+  padding: 10px;
+  background-color: #f8961e;
+  border-radius: 25px 10px 25px 10px;
+}
+.pages {
+  display: flex;
+  margin-left: 37%;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.id {
+  font-size: 30px;
+  margin-top: 5px;
+}

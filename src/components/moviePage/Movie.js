@@ -27,7 +27,6 @@ const Movie = (props) => {
     genre: 0,
   });
   let slug = useParams();
-  console.log(slug.id);
   useEffect(() => {
     axios
       .get("http://127.0.0.1:8000/api/movie/" + String(slug.id))
@@ -44,7 +43,7 @@ const Movie = (props) => {
             controls={true}
             url={Data.link}
             className="react-player"
-            autoplay="false"
+            autoPlay={false}
             width="100%"
             height="50%"
           />

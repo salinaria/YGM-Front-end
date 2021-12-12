@@ -49,8 +49,8 @@
   color: white;
   font-family: "Offside";
   font-size: 24px;
-  margin-left: 80%;
-  margin-top: -30px;
+  margin-left: 65%;
+  margin-top: -40px;
   border-radius: 25px 10px 25px 10px;
   transform: rotate(3deg);
 }
@@ -91,7 +91,7 @@
 .infor {
   margin-top: 5px;
   font-size: 18px;
-  width: 80%;
+  width: 100%;
 }
 
 .infall {
