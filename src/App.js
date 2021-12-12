@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
 import Movie from "./components/moviePage/Movie";
 import Home from "./components/HomePage/Home";
+import Search from './components/SearchPage/Search';
+
 import { BrowserRouter, Route } from "react-router-dom";
 import Profile from "./components/ProfilePage/Profile"
 
@@ -39,6 +41,9 @@ function App() {
           <Movie />
         </Route>
 
+        <Route path="/search">
+          <Search />
+        </Route>
       </BrowserRouter>
     </div>
   );
