@@ -4,6 +4,17 @@ import { Link } from "react-router-dom";
 
 const colors = [
   {
+    image: "https://mcdn.wallpapersafari.com/medium/3/40/wvljyk.jpg",
+    name: "La casa de papel",
+    id: 13,
+  },
+  {
+    image:
+      "https://zoomlife.ir/uploads/posts/2021-01/1610878719-no-time-to-die.jpg",
+    name: "No time to die",
+    id: 14,
+  },
+  {
     image:
       "https://images.indianexpress.com/2021/07/canva-photo-editor-13-1.jpg",
     name: "Harry Potter and the Deathly Hallows",
@@ -29,18 +40,6 @@ const colors = [
       "https://www.teahub.io/photos/full/173-1738317_pirates-of-the-caribbean-3-at-worlds-end.jpg",
     name: "Pirates of the Caribbean: The Curse of the Black Pearl",
     id: 12,
-  },
-  {
-    image:
-      "https://mcdn.wallpapersafari.com/medium/3/40/wvljyk.jpg",
-    name: "La casa de papel",
-    id: 13,
-  },
-  {
-    image:
-      "https://zoomlife.ir/uploads/posts/2021-01/1610878719-no-time-to-die.jpg",
-    name: "No time to die",
-    id: 14,
   },
   {
     image:
