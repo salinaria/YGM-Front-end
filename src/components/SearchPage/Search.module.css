@@ -1,0 +1,15 @@
+.style {
+    width: 40%;
+    height: 60px;
+    background-color: #db8e1a;
+    margin-left: 30%;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding-top: 17px;
+    padding-left: 15%;
+    font-family: "Offside";
+    margin-right: 20%;
+    display: flex;
+    font-size: x-large;
+    text-align: center;
+}
