@@ -59,7 +59,7 @@ a:active {
   border-radius: 20px;
   background-color: aliceblue;
   border: 3px solid #f7971d;
-  animation: wave 2s ease-in-out;
+  animation: wave 1.25s ease-in-out;
 }
 
 @keyframes wave {
