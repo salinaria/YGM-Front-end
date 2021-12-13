@@ -5,6 +5,7 @@ import { AccountBox } from "./components/accountBox";
 import Movie from "./components/moviePage/Movie";
 import Home from "./components/HomePage/Home";
 import Search from "./components/SearchPage/Search";
+import Watchlist from "./components/WatchList/Watchlist";
 
 import { BrowserRouter, Route } from "react-router-dom";
 import Profile from "./components/ProfilePage/Profile";
@@ -42,6 +43,9 @@ function App() {
 
         <Route exact path="/search/:text">
           <Search />
+        </Route>
+        <Route path="/watch">
+          <Watchlist />
         </Route>
       </BrowserRouter>
     </div>
