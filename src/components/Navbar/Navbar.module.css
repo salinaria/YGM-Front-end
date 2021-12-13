@@ -1,37 +1,113 @@
-.body{
-    width: 60%;
-    height: 60px;
-    background-color: #F7971D;
-    margin-left: 20%;
-    border-radius: 20px;
-    margin-top: 30px;
-    padding-top: 5px;
-    padding-left: 3%;
-    font-family: "Offside";
-    margin-right: 20%;
-    display: flex;
+.body {
+  width: 60%;
+  height: 60px;
+  background-color: #f7971d;
+  margin-left: 20%;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-left: 3%;
+  font-family: "Offside";
+  margin-right: 20%;
+  display: flex;
 }
-.NavItemImage{
-    width: 30px;
-    height: 30px;
+.NavItemImage {
+  width: 30px;
+  height: 30px;
+}
+.NavItemText {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  margin-top: 0;
+}
+.NavItemText :hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+.item {
+  justify-content: center;
+  align-content: center;
+  margin-right: 16%;
+  text-align: center;
+}
+.logo {
+  margin-right: 16%;
+}
 
+.search {
+  margin-top: 0px;
+  font-family: "Offside";
+  background: none;
+  border: none;
+  justify-content: center;
+  align-content: center;
+  margin-right: 16%;
+  text-align: center;
 }
-.NavItemText{
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    margin-top: 0;
+
+.open {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  width: 60%;
+  margin-left: 20%;
+  height: 60px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  border: 3px solid #f7971d;
+  animation: wave 2s ease-in-out;
 }
-.NavItemText :hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+
+@keyframes wave {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
-.item{
-    justify-content: center;
-    align-content: center;
-    margin-right: 16%;
-    text-align: center;
+
+.input {
+  width: 80%;
+  margin-top: 3px;
+  padding-left: 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "Offside";
+  height: 52px;
+  font-size: 20px;
+  color: #282c34;
+  background-color: aliceblue;
 }
-.logo{
-    margin-right: 16%;
+.searchbtn {
+  margin-left: 30px;
+  background: none;
+  font-family: "Offside";
+  font-size: 20px;
+  border: none;
+  height: 45px;
+  width: 45px;
+  padding: 7.5px;
+  border-radius: 45px;
+  margin-top: 7.5px;
 }
+.sitem {
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+}
+.citem {
+  width: 40px;
+  height: 40px;
+  margin-left: -5px;
+  margin-top: -3px;
+}
+.close {
+  display: none;
+}
+

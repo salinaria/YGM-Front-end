@@ -40,7 +40,7 @@ function App() {
           <Movie />
         </Route>
 
-        <Route exact path="/search">
+        <Route exact path="/search/:text">
           <Search />
         </Route>
       </BrowserRouter>
