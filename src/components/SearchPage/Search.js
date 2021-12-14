@@ -6,7 +6,7 @@ import { useParams } from "react-router";
 import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 import MovieBox from ".//..//MovieBox/MovieBox";
-
+import Sad from ".//..//..//assets//Sadsvg.svg"
 const Search = () => {
   let slug = useParams();
   const [Data, setData] = useState([
@@ -33,9 +33,14 @@ const Search = () => {
       <Navbar />
       <p className={classes.title}>Search results for '{slug.text}' </p>
       <div className={classes.line}></div>
-      {Data.map((detail, index) => (
-        <MovieBox inf={detail} />
-      ))}
+      {Data.length === 0 ? (
+        <div>
+          <p className={classes.empty}>Sorry, we couldn't find any results</p>
+          <img className={classes.emptyimg} src={Sad} alt="hii"/>
+        </div>
+      ) : (
+        Data.map((detail, index) => <MovieBox inf={detail} />)
+      )}
     </div>
   );
 };

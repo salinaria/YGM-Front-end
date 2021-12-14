@@ -5,9 +5,21 @@
   color: #f8961e;
 }
 
-.line{
+.line {
   background-color: #f8961e;
   padding: 1px;
   width: 85%;
   margin-left: 50px;
+}
+.empty {
+  margin-left: 30%;
+  font-size: 30px;
+  margin-top: 50px;
+  color: white;
+}
+
+.emptyimg{
+  margin-top: 50px;
+  margin-left: 40%;
+  width: 200px;
 }
