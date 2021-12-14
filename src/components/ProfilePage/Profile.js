@@ -49,7 +49,7 @@ const Profile = (props) => {
         </div>
         <button className={classes.btn} onClick={signoutf}>
           <img className={classes.btnimg} src={signout} alt="signout" />
-          <p className={classes.btntxt}>Sign out</p>
+          <p className={classes.btntxt}>Log out</p>
         </button>
       </div>
       <div className={classes.bacx}></div>

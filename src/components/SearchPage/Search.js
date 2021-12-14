@@ -31,7 +31,8 @@ const Search = () => {
   return (
     <div>
       <Navbar />
-      <p className={classes.title}>Search results for '{slug.text}' :</p>
+      <p className={classes.title}>Search results for '{slug.text}' </p>
+      <div className={classes.line}></div>
       {Data.map((detail, index) => (
         <MovieBox inf={detail} />
       ))}

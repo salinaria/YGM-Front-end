@@ -57,9 +57,10 @@ a:active {
   height: 60px;
   margin-top: 30px;
   border-radius: 20px;
-  background-color: aliceblue;
+  background-color: rgb(24, 24, 24);
   border: 3px solid #f7971d;
   animation: wave 1.25s ease-in-out;
+  padding-left: 20px;
 }
 
 @keyframes wave {
@@ -71,18 +72,19 @@ a:active {
   }
 }
 
+
+
 .input {
   width: 80%;
   margin-top: 3px;
-  padding-left: 15px;
   border-radius: 20px;
   border: none;
   outline: none;
   font-family: "Offside";
   height: 52px;
   font-size: 20px;
-  color: #282c34;
-  background-color: aliceblue;
+  color: aliceblue;
+  background-color: rgb(24, 24, 24);
 }
 .searchbtn {
   margin-left: 30px;
@@ -99,15 +101,14 @@ a:active {
 .sitem {
   width: 30px;
   height: 30px;
-  margin-top: 0px;
+  margin-top: -3px;
 }
 .citem {
   width: 40px;
   height: 40px;
   margin-left: -5px;
-  margin-top: -3px;
+  margin-top: -5px;
 }
 .close {
   display: none;
 }
-

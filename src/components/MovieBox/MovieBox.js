@@ -6,13 +6,49 @@ import Genre from "..//..//assets/GenreW.svg";
 import Cast from "..//..//assets/CastW.svg";
 import Time from "..//..//assets/TimeW.svg";
 import Summary from "..//..//assets/SummaryW.svg";
+import Bookmarkorange from "..//..//assets/Bookmarkorange.svg";
+import Bookmarkedorange from "..//..//assets/Bookmarked.svg";
+import axios from "axios";
+import { useState } from "react";
 
 const MovieBox = (props) => {
+  const [removed,setRemoved] = useState(false)
+  const currentUser = () => {
+    return JSON.parse(localStorage.getItem("currentUser"));
+  };
+  const customHeader = () => ({
+    headers: {
+      "content-type": "application/json",
+      Authorization: "Token " + currentUser().token,
+    },
+    validateStatus: (status) => status === 200,
+  });
+  function remWishlist() {
+    const requestOptions = customHeader();
+    axios.delete(
+      "http://127.0.0.1:8000/api/delwatch/" + String(props.inf.id) + "/",
+      requestOptions
+    );
+    setRemoved(true);
+  }
   return (
-    <div className={classes.body}>
+    <div className={removed?classes.hide:classes.body}>
       <div className={classes.circle}></div>
       <div className={classes.rectangle}></div>
       <div className={classes.box}>
+        <button
+          className={props.show ? classes.wishlisted : classes.hide}
+          onClick={remWishlist}
+        >
+          <div className={classes.wishi}>
+            <img
+              src={Bookmarkedorange}
+              className={classes.wishicon}
+              alt="icon"
+            />
+            <p className={classes.wishtxt}>Remove from Wishlist</p>
+          </div>
+        </button>
         <div className={classes.dual}>
           <img className={classes.img} src={props.inf.image} alt="movimg" />
           <div>

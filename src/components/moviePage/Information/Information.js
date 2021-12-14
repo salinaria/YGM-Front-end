@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classes from "./Information.module.css";
 import Year from "..//..//..//assets/Year.svg";
 import Genre from "..//..//..//assets/Genre.svg";
@@ -8,26 +8,67 @@ import Time from "..//..//..//assets/Time.svg";
 import Summary from "..//..//..//assets/Summary.svg";
 import Bookmarkorange from "..//..//..//assets/Bookmarkorange.svg";
 import Bookmarkedorange from "..//..//..//assets/Bookmarked.svg";
+import axios from "axios";
 
 const Information = (props) => {
-  const [iswished, setWish] = useState(false);
+  const [iswished, setWish] = useState(props.wish);
+  console.log(props.wish);
   const wished = () => {
-    if (iswished === false) {
-      setWish(true);
+    if (iswished === "not found") {
+      setWish("found");
+      addWishlist();
     } else {
-      setWish(false);
+      setWish("not found");
+      remWishlist();
     }
   };
+  const currentUser = () => {
+    return JSON.parse(localStorage.getItem("currentUser"));
+  };
+  const thisuser = currentUser();
+  const customHeader = () => ({
+    headers: {
+      "content-type": "application/json",
+      Authorization: "Token " + currentUser().token,
+    },
+    validateStatus: (status) => status === 200,
+  });
+
+  function addWishlist() {
+    const requestOptions = customHeader();
+    axios.post(
+      "http://127.0.0.1:8000/api/watchlist/",
+      { movie_saved_to_watch: props.inf.id },
+      requestOptions
+    );
+  }
+
+  function remWishlist() {
+    const requestOptions = customHeader();
+    axios.delete(
+      "http://127.0.0.1:8000/api/delwatch/" + String(props.inf.id) + "/",
+      requestOptions
+    );
+  }
+  useEffect(() => {
+    setWish(props.wish);
+  }, [props.wish]);
   return (
     <div className={classes.info}>
       <p className={classes.title}>{props.inf.name}</p>
       <img src={props.inf.image} className={classes.image} alt="icon" />
 
       <button
-        className={iswished ? classes.wishlisted : classes.wishlist}
+        className={
+          thisuser === null
+            ? classes.hide
+            : iswished === "found"
+            ? classes.wishlisted
+            : classes.wishlist
+        }
         onClick={wished}
       >
-        {iswished ? (
+        {iswished === "found" ? (
           <div className={classes.wishi}>
             <img
               src={Bookmarkedorange}

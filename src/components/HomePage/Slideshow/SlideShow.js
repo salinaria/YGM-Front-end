@@ -83,7 +83,7 @@ const SlideShow = (props) => {
       >
         {colors.map((categor, index) => (
           <div className={classes.slide} key={index}>
-            <Link to={"/movie/" + String(categor.id)}>
+            <Link to={"/movie/" + String(categor.id)} target="_blank">
               <img
                 src={categor.image}
                 className={classes.image}

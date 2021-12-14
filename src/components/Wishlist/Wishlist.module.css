@@ -1,0 +1,13 @@
+.empty{
+    font-family: "Offside";
+    width: 45%;
+    margin-left: 27.5%;
+    margin-top: 100px;
+    font-size: 36px;
+    color: #f8961e;
+    text-align: center;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+}

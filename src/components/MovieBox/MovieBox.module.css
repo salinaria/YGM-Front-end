@@ -114,3 +114,36 @@
   margin-top: -10px;
   margin-left: 25px;
 }
+.wishlisted {
+  position: absolute;
+  background-color: #212121;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  margin-left: 82.5%;
+  width: 200px;
+  padding-left: 2.5px;
+  padding-right: 5px;
+  margin-top: 50px;
+  height: 45px;
+}
+.wishlisted:hover {
+  box-shadow: 0px 8px 5px 0px rgba(33, 33, 33, 0.55);
+}
+
+.wishicon {
+  width: 42px;
+  height: 42px;
+  margin-top: 1.5px;
+}
+.wishtxt {
+  font-family: "Offside";
+  font-size: 16px;
+  margin-top: 2px;
+  color: #f8961e;
+}
+.wishi {
+  display: flex;
+}
+.hide {
+  display: none;
+}

@@ -4,3 +4,10 @@
   margin-top: 50px;
   color: #f8961e;
 }
+
+.line{
+  background-color: #f8961e;
+  padding: 1px;
+  width: 85%;
+  margin-left: 50px;
+}

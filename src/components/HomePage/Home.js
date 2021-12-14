@@ -44,7 +44,7 @@ const Home = (props) => {
       <Navbar />
       <SlideShow />
       {Data.map((detail, index) => (
-        <MovieBox inf={detail} />
+        <MovieBox show={false} inf={detail} />
       ))}
       <div className={classes.pages}>
         <button className={classes.btn} onClick={prev}>
